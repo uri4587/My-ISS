@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Where is my ISS</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="src/Affirmative.ttf">
+        <link rel="stylesheet" href="src/AffirmativeItalic.ttf">
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <div>
+            <h1 id="title">Find My ISS</h1>
+        </div>
+        <div class="container">
+            <form class="coordinates-form">
+                <h3>Enter Coordinates Here: </h3>
+                <input 
+                    id="longitude"
+                    type="text"
+                    name="longitude"
+                    value=""
+                    placeholder="Enter Longitude"
+                    class="input-text"
+                />
+                <label class="polarity-label" for="E/W">Choose a polarity:</label>
+                <select name="polarity" id="polarity-EW">
+                <option value="1">West</option>
+                <option value="-1">East</option>
+                </select>
+                <br />
+                <input 
+                    id="latitude"
+                    type="text"
+                    name="latitude"
+                    value=""
+                    placeholder="Enter Latitude"
+                    class="input-text"
+                />
+                <label class="polarity-label" for="N/S">Choose a polarity:</label>
+                <select name="polarity" id="polarity-NS">
+                <option value="1">North</option>
+                <option value="-1">South</option>
+                </select>
+                <br />
+                <input 
+                    id="submit"
+                    type="submit"
+                    name="submit"
+                    value="Submit Coordinates"
+                    class="submit"
+                />
+                <br />
+                <h3>Click the link below to find your exact coordinates:</h3>
+                <h4> <a href="https://earth.google.com/" target="_blank">Google Earth</a></h4>
+            </form>
+        </div>
+        <div id="planet-container">
+            <div id="planet-left"></div>
+            <div id="planet-right"></div>
+        </div>
+    </body>
+</html>

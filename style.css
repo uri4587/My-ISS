@@ -1,0 +1,196 @@
+
+@font-face{
+  font-family:spaceFont;
+  src:url(./src/Affirmative.ttf)
+}
+
+#title {
+    text-align: center;
+    -webkit-text-stroke: 1px   yellow;
+    color: black;
+    font-size: 80px;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family:spaceFont;
+    border-style: dotted;
+    border-color: aqua;
+}
+.container {
+    position: top;
+    text-align: center;
+    -webkit-text-stroke: .5px   yellow;
+    color: black;
+    font-size: 35px;
+    font-family:spaceFont;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+body {
+    background-image: url("./src/galaxy-2.jpeg");
+    padding-bottom: 660px;
+    position: relative;
+    /* height: 2000px; */
+}
+h3{
+  filter: drop-shadow(0px 0px 10px orange);
+  
+}
+#longitude.input-text{
+    -webkit-text-stroke: 1px  violet;
+    color: black;
+    font-size: 25px;
+    background-color:  aqua;
+}
+
+#latitude.input-text{
+    -webkit-text-stroke: 1px   violet;
+    color: black;
+    font-size: 25px;
+    background-color: aqua;
+   
+}
+
+.polarity-label{
+  text-align: center;
+    color: black;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+  
+}
+
+#submit.submit {
+        -webkit-text-stroke: .5px   aqua;
+        color: black;
+        font-size: 15px;
+        background-color: violet;
+}
+
+.image-container {
+    float: right;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#iss{
+    position:absolute;
+    top: 245px;
+    left: 241px;
+    background-color: transparent;
+    width: 70px;
+    border-color: crimson;
+    border-style: double;
+    }
+    #planet-left{
+      position:absolute;
+      background-image: url("src/ApianLeft.png");
+      background-size: contain;
+      width:500px;
+      background-repeat: no-repeat;
+      height:500px;
+      margin-right: 0;
+      margin-left: auto;
+      /* padding-top:100%; */
+      left: 400px;
+    }
+    #planet-right{
+      position:absolute;
+      background-image: url("src/ApianRight.png");
+      background-size: contain;
+      width:500px;
+      background-repeat: no-repeat;
+      height:500px;
+      margin-left: auto;
+      margin-right: 0;
+      /* padding-top:100%; */
+      left: 900px;
+    }
+    a {
+        color:  #881818;
+        filter: drop-shadow(0px 0px 10px yellow)
+    }
+
+    .dropbtn {
+        background-color: purple;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+      }
+      
+      /* The container <div> - needed to position the dropdown content */
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      /* Dropdown Content (Hidden by Default) */
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: violet;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      /* Links inside the dropdown */
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      /* Change color of dropdown links on hover */
+      .dropdown-content a:hover {background-color: #f1f1f1}
+      
+      /* Show the dropdown menu on hover */
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      
+      /* Change the background color of the dropdown button when the dropdown content is shown */
+      .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+      }
+
+      #userLocation {
+      position: absolute;
+      top: 500px;
+      left: 300px;
+      background-color: transparent;
+      width: 20px;
+      }
+
+    #results-of-submit {
+      position: fixed;
+      left: 0;
+      width: 100%;
+      
+      bottom: 0;
+      text-align: center;
+      color: purple;
+      -webkit-text-stroke: 1.5px   black;
+      background-color: white;
+      font-size: 22px;
+      font-weight: bold;
+      display: block;
+    
+       
+    }
+
+    #polarity-EW{
+      background-color: gray;
+      color: black;
+      -webkit-text-stroke: 1px  black
+
+    }
+    #polarity-NS{
+      background-color: gray;
+      color: black;
+      -webkit-text-stroke: 1px  black
+      
+    }
